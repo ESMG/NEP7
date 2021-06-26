@@ -26,8 +26,8 @@
             months = 0,
             days   = 3,
             hours  = 0,
-            current_date = 1980,12,28,0,0,0,
-            calendar = 'julian',
+            current_date = 1980,1,1,0,0,0,
+            calendar = 'gregorian',
             dt_cpld = 3600,
             dt_atmos = 3600,
             do_atmos = .false.,
@@ -114,7 +114,7 @@
 
  &surface_flux_nml
             ncar_ocean_flux = .true.
-	    raoult_sat_vap = .false.
+            raoult_sat_vap = .true.
 /
 
  &topography_nml

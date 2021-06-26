@@ -88,11 +88,16 @@ ICE_THICKNESS_IC_VAR = "hm"     ! default = "mH_ice"
                                 ! The initial condition variable for ice mass per unit area.
 ICE_SALINITY_IC = 3.0           !   [g kg-1] default = 0.0
                                 ! The uniform sea ice salinity used for the initial condition
+ICE_TEMPERATURE_IC = -4.0       !   [degC] default = 0.0
+                                ! The uniform sea ice and snow temperature used for the initial condition
 
 ! === module SIS_slow_thermo ===
 ! This module calculates the slow evolution of the ice mass, heat, and salt budgets.
 ICE_BULK_SALINITY = 4.0         !   [g/kg] default = 4.0
                                 ! The fixed bulk salinity of sea ice.
+ICE_RELATIVE_SALINITY = 0.1     !   [nondim] default = 0.0
+                                ! The initial salinity of sea ice as a fraction of the salinity of the seawater
+                                ! from which it formed.
 TRANSMUTE_SEA_ICE = False       !   [Boolean] default = False
                                 ! If true, allow ice to be transmuted directly into seawater with a spatially
                                 ! spatially varying rate as a form of outflow open boundary condition.
